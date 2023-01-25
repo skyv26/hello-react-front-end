@@ -3,7 +3,9 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 const greetingAPI = '/api/v1/greeting/greeting.json';
 const greetingMethod = '/get/greeting';
 
-const initialState = {};
+const initialState = {
+  greeting: '',
+};
 
 export const GreetingThunk = createAsyncThunk(greetingMethod, async () => {
   const greeting = await (await (fetch(greetingAPI))).json();
