@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const greetingAPI = '/api/v1/greeting/greeting.js';
+const greetingAPI = '/api/v1/greeting/greeting.json';
 const greetingMethod = '/get/greeting';
 
 const initialState = {};
@@ -15,7 +15,7 @@ const greetingSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(GreetingThunk, (state, action) => {
+    builder.addCase(GreetingThunk.fulfilled, (state, action) => {
       const { payload } = action;
       return {
         ...payload,
