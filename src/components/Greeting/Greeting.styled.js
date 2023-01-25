@@ -8,6 +8,8 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const DisplayText = styled.p`
+export const DisplayText = styled.h1`
   font-family: 'Exo 2', sans-serif;
+  font-size: 6vw;
+  font-weight: bold;
 `;
