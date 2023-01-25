@@ -18,6 +18,8 @@ const StyleResetter = createGlobalStyle`
   body {
     width: 100%;
     min-height: 100%;
+    background-color: #6592b9;
+    color: white;
   }
 
   /* font-family: 'Exo 2', sans-serif;
