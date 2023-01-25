@@ -17,6 +17,7 @@
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
+- [💻 Backend Repository](#backend-repo)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -28,6 +29,7 @@
 > Describe your project in 1 or 2 sentences.
 
 **Hello_React_Front_End** is a learning react app where with the help of `reduxjs/toolkit` data will get from an API implemented on rails.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -143,6 +145,20 @@ Vercel
 - [ ] **Pages**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- BACK-END REPOSITORY -->
+## 💻 Back-end Repository <a name="backend-repo"></a>
+
+- [Click Here](https://github.com/skyv26/hello-rails-back-end)
+
+- Clone this repository to your desired folder:
+
+- Example command:
+
+  ```
+    git clone https://github.com/skyv26/hello-rails-back-end.git
+    cd hello-rails-back-end
+  ```
 
 <!-- CONTRIBUTING -->
 
