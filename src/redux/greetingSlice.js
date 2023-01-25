@@ -15,7 +15,6 @@ export const GreetingThunk = createAsyncThunk(greetingMethod, async () => {
   } catch {
     greeting = await (await (fetch(greetingLocalAPI))).json();
   }
-  console.log(greeting);
   return greeting;
 });
 
