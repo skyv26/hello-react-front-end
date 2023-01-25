@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const greetingAPI = '/api/v1/greeting/greeting.json';
+const greetingLocalAPI = '/api/v1/greeting/greeting.json';
+const greetingServerAPI = 'https://hello-rails-back-end-ih47.onrender.com/api/v1/greetings';
 const greetingMethod = '/get/greeting';
 
 const initialState = {
@@ -8,7 +9,13 @@ const initialState = {
 };
 
 export const GreetingThunk = createAsyncThunk(greetingMethod, async () => {
-  const greeting = await (await (fetch(greetingAPI))).json();
+  let greeting;
+  try {
+    greeting = await (await (fetch(greetingServerAPI))).json();
+  } catch {
+    greeting = await (await (fetch(greetingLocalAPI))).json();
+  }
+  console.log(greeting);
   return greeting;
 });
 
