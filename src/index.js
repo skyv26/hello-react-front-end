@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 import store from './redux/configureStore';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -19,9 +20,11 @@ root.render(
       </Helmet>
     </HelmetProvider>
     <StyleResetter />
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>,
 );
 
