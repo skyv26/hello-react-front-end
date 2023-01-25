@@ -1,9 +1,10 @@
 import React from 'react';
+import { DisplayText, Container } from './Greeting.styled';
 
 const Greeting = () => (
-  <div className="container">
-    <h1>Good Morning 🌅</h1>
-  </div>
+  <Container>
+    <DisplayText>Good Morning 🌅</DisplayText>
+  </Container>
 );
 
 export default Greeting;
