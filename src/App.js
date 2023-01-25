@@ -12,8 +12,8 @@ const App = () => {
   }, [dispatch]);
   return (
     <Routes>
-      <Route path="/greeting" element={<Greeting />} />
-      <Route path="/" element={<Navigate replace to="/greeting" />} />
+      <Route path="/" element={<Greeting />} />
+      <Route path="/greeting" element={<Navigate replace to="/" />} />
     </Routes>
   );
 };
