@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { DisplayText, Container } from './Greeting.styled';
 
 const Greeting = () => {
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.greeting);
   const { greeting } = state;
   return (
     <Container>
